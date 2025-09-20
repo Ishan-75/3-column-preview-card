@@ -1,0 +1,242 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+:root {
+    --background-white: hsl(0, 0%, 95%);
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+    --Gold: hsl(31, 77%, 52%);
+    --Cyan: hsl(184, 100%, 22%);
+    --Green: hsl(179, 100%, 13%)
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: var(--background-white);
+}
+
+.card1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    width: 220px;
+    height: 360px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: var(--Gold);
+}
+
+.card1 img {
+    width: 40px;
+    height: 30px;
+}
+
+.title {
+    color: var(--background-white);
+    font-family: "Big Shoulders", sans-serif;
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.description {
+    color: var(--paragraph);
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.button1 {
+    position: absolute;
+    bottom: 35px;
+    border: none;
+    border-radius: 40px;
+    font-size: 10px;
+    padding: 10px 20px;
+    color: var(--Gold);
+}
+
+.button1:hover {
+    background: var(--Gold);
+    border: 2px solid var(--background-white);
+    color: var(--paragraph);
+}
+
+.card2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    width: 220px;
+    height: 360px;
+    background: var(--Cyan);
+}
+
+.card2 img {
+    width: 40px;
+    height: 30px;
+}
+
+.title {
+    color: var(--background-white);
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.description {
+    color: var(--paragraph);
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.button2 {
+    position: absolute;
+    bottom: 35px;
+    border: none;
+    border-radius: 40px;
+    font-size: 10px;
+    padding: 10px 20px;
+    color: var(--Cyan);
+}
+
+.button2:hover {
+    background: var(--Cyan);
+    border: 2px solid var(--background-white);
+    color: var(--paragraph);
+}
+
+.card3 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    width: 220px;
+    height: 360px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: var(--Green);
+}
+
+.card3 img {
+    width: 40px;
+    height: 30px;
+}
+
+.title {
+    color: var(--background-white);
+    font-family: "Big Shoulders", sans-serif;
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.description {
+    color: var(--paragraph);
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.button3 {
+    position: absolute;
+    bottom: 35px;
+    border: none;
+    border-radius: 40px;
+    font-size: 10px;
+    padding: 10px 20px;
+    color: var(--Green);
+}
+
+.button3:hover {
+    background: var(--Green);
+    border: 2px solid var(--background-white);
+    color: var(--paragraph);
+}
+
+
+/* @ media query*/
+@media screen and (max-width:375px) {
+    body {
+        background: var(--background-white);
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        margin:60px 0;
+
+    }
+    .card1{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+
+    }
+    .card2{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .card3{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 0;
+    }
+    .card {
+        position: relative;
+        height: 220px;
+        width: 160px;
+        padding: 20px;
+         gap: 20px;
+    
+    } 
+
+
+    .card img {
+        width: 30px;
+        height: 20px;
+    }
+
+    .title {
+        position: absolute;
+        top: 55px;
+        color: var(--background-white);
+        font-family: "Big Shoulders", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .description {
+        padding-right: 20px;
+        position: absolute;
+        top: 90px;
+        color: var(--paragraph);
+        font-size: 8px;
+        font-weight: 300;
+        line-height: 15px;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 25px;
+        border: none;
+        border-radius: 40px;
+        font-size: 7px;
+        padding: 6px 12px;
+       
+    }
+
+}
